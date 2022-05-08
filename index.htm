@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Prototype</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="mannequin">
+                <img class="model" src="img/model_men.jpg">
+            </div>
+            <div id="nav">
+                <div class="menu-item" onclick="Nav('.outerwear')">
+                    Верхняя одежда
+                    <div class="submenu">Футболки</div>
+                </div>
+                <div class="menu-item" onclick="Nav('.underwear')">
+                    Нижняя одежда
+                    <div class="submenu">Брюки</div>
+                </div>
+                <div class="menu-item" onclick="Nav('.shoes')">
+                    Обувь
+                    <div class="submenu">Туфли</div>
+                </div>
+            </div>
+            <div class="menu">
+                <div class="choice">
+                    <div class="outerwear">
+                        <div onclick="ClickCh('.clothes1')" class="clothes clothes1">
+                            <img src="img/T-short.png">
+                        </div>
+                        <div onclick="ClickCh('.clothes3')" class="clothes clothes3">
+                            <img src="img/1962.750x0.png">
+                        </div>
+                    </div>
+                    <div class="underwear">
+                        <div onclick="ClickCh('.clothes2')" class="clothes clothes2">
+                            <img src="img/short.png">
+                        </div>
+                    </div>
+                    <div class="shoes"></div>
+                </div>
+            </div>
+        </div>
+        <div class="edit">Редактировать</div>
+        <script src="main.js"></script>
+    </body>
+</html>

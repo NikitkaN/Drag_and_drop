@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+}
+.container {
+    display: grid;
+    height: 100vh;
+    gap: 50px;
+
+    grid-template-areas:
+    ". . . . . . . ."
+    ". . . . . . . ."
+    ". . A A C C . ."
+    ". . A A B B . ."
+    ". . A A B B . ."
+    ". . A A B B . ."
+    ". . . . . . . ."
+    ". . . . . . . .";
+}
+.mannequin {
+    grid-area: A;
+}
+.menu {
+    grid-area: B;
+}
+#nav {
+    grid-area: C;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    height: 50px;
+}
+.menu .choice .outerwear, .menu .choice .underwear{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.clothes img {
+    height: 300px;
+}
+.clothes {
+    height: 350px;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.menu-item {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    /* width: 100%; */
+    width: 205px;
+    height: 50px;
+    /* text-align: center; */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    line-height:50px;
+    margin:0;
+    text-align: center;
+    padding: 0;
+    padding-left: 50px;
+}
+.menu-item .submenu {
+    height: 50px;
+    width: 150px;
+    display: none;
+    position: absolute;
+    cursor: pointer;
+}
+.outerwear {
+    display: none !important;
+}
+.underwear {
+    /* margin-top: -115px; */
+    display: none !important;
+}
+.shoes {
+    display: none !important;
+}
+.visible {
+    display: flex !important;
+}
+.edit {
+    
+}
