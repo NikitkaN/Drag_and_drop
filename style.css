@@ -37,16 +37,16 @@ body {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     height: 50px;
 }
-.menu .choice .outerwear, .menu .choice .underwear{
+.outerwear, .underwear, .edit_yell{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .clothes img {
-    height: 300px;
+    height: 250px;
 }
 .clothes {
-    height: 350px;
+    height: 300px;
     padding: 20px;
     cursor: pointer;
     border-radius: 50px;
@@ -86,9 +86,15 @@ body {
 .shoes {
     display: none !important;
 }
+.edit_yell {
+    display: none !important;
+}
 .visible {
     display: flex !important;
 }
 .edit {
-    
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
 }
